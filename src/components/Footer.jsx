@@ -34,7 +34,7 @@ function Footer() {
 
                 <nav 
                     id="footerNav"
-                    aria-labelledby='Navigation Footer'
+                    aria-label='Footer Navigation'
                     className="lg:grid lg:grid-cols-4 lg:gap-x-8 lg:items-start"
                 >
                     <ul>
