@@ -114,7 +114,7 @@ function App() {
         </section>
 
 {/*ShortenLink Section */}
-          <section className='mt-32 pb-28 relative bg-gray-100'>
+          <div className='mt-32 pb-28 relative bg-gray-100'>
             <div className='absolute top-[-60%] inset-x-0 mx-auto px-6 md:px-12 lg:px-28'>
               <ShortenLink
                 id="userInput"
@@ -124,7 +124,7 @@ function App() {
                 handleSubmit={getShortenUrl}
               />
             </div>
-          </section>
+          </div>
 
 {/*API response and copy links */}
           {showLinks &&
