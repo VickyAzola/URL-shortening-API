@@ -23,7 +23,10 @@ function Navbar() {
 
     return (
     <>
-        <nav className='relative px-5 py-6 lg:pt-8 md:px-12 lg:px-28 md:flex md:items-center'>
+        <nav 
+            id="headerNav"
+            aria-label="Top Navigation"
+            className='relative px-5 py-6 lg:pt-8 md:px-12 lg:px-28 md:flex md:items-center'>
 
         {/* Logo, Hamburger and Close mobile */}
         <div className='flex justify-between items-center'>
