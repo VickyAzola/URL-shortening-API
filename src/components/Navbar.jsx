@@ -23,46 +23,45 @@ function Navbar() {
 
     return (
     <>
-        <nav 
-            id="headerNav"
-            aria-label="Top Navigation"
-            className='relative px-5 py-6 lg:pt-8 md:px-12 lg:px-28 md:flex md:items-center'>
+        <nav className='relative px-5 py-6 lg:pt-8 md:px-12 lg:px-28 '>
 
-        {/* Logo, Hamburger and Close mobile */}
-        <div className='flex justify-between items-center'>
-            <a href='/' aria-label='Logo'>
-                <img className='' src={Logo} alt="Logo"/>
-            </a>
-            <button onClick={showNavbar} className='block md:hidden' aria-label="Open and Close Navigation">
-                {nav 
-                ? <img className='w-6 ease-in duration-700' src={Close} alt="Close Navigation"/>
-                : <img className='w-6 ease-out duration-700' src={Hamburger} alt="Open Navigation"/> }
-            </button>
-        </div>
+        <div className='md:flex md:items-center max-w-[80rem] mx-auto'>
+            {/* Logo, Hamburger and Close mobile */}
+            <div className='flex justify-between items-center'>
+                <a href='/' aria-label='Logo'>
+                    <img className='' src={Logo} alt="Logo"/>
+                </a>
+                <button onClick={showNavbar} className='block md:hidden' aria-label="Open and Close Navigation">
+                    {nav 
+                    ? <img className='w-6 ease-in duration-700' src={Close} alt="Close Navigation"/>
+                    : <img className='w-6 ease-out duration-700' src={Hamburger} alt="Open Navigation"/> }
+                </button>
+            </div>
 
-        {/* Desktop Navigation */}
-        <div className='hidden md:flex items-center justify-between pl-10 w-full'>
-            <ul className='flex items-center md:gap-x-4 lg:gap-x-8 h-full'>
-                {navItems.map((item, index) => (
-                <li key={index}
-                className='font-semibold hover:cursor-pointer text-neutralGrayishViolet'>
-                    <a 
-                        href=''
-                        className='text-DarkGrayishBlue hover:text-primaryDarkViolet h-full'>
-                            {item.text}
-                    </a>
-                </li>
-                ))}
-            </ul>
+            {/* Desktop Navigation */}
+            <div className='hidden md:flex items-center justify-between pl-10 w-full'>
+                <ul className='flex items-center md:gap-x-4 lg:gap-x-8 h-full'>
+                    {navItems.map((item, index) => (
+                    <li key={index}
+                    className='font-semibold hover:cursor-pointer text-neutralGrayishViolet'>
+                        <a 
+                            href=''
+                            className='text-DarkGrayishBlue hover:text-primaryDarkViolet h-full'>
+                                {item.text}
+                        </a>
+                    </li>
+                    ))}
+                </ul>
 
-            {/* Login and Sign Up */}
-            <div className='flex items-center gap-x-6'>
-                <button className='py-2 font-semibold text-neutralGrayishViolet hover:text-primaryDarkViolet'>Login</button>
-                <Button 
-                    buttonText='Sign Up'
-                    borderStyle='rounded'
-                    variant='narrow'
-                />
+                {/* Login and Sign Up */}
+                <div className='flex items-center gap-x-6'>
+                    <button className='py-2 font-semibold text-neutralGrayishViolet hover:text-primaryDarkViolet'>Login</button>
+                    <Button 
+                        buttonText='Sign Up'
+                        borderStyle='rounded'
+                        variant='narrow'
+                    />
+                </div>
             </div>
         </div>
         
