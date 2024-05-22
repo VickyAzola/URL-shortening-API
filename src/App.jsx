@@ -128,8 +128,9 @@ function App() {
 
 {/*API response and copy links */}
           {showLinks &&
-          <section className='flex flex-col justify-center items-center bg-gray-100 md:px-12 lg:px-28 px-6 pb-8 max-w-[90rem] mx-auto'>
+          <section className='bg-gray-100'>
               
+            <div className='max-w-[90rem] mx-auto flex flex-col justify-center items-center md:px-12 lg:px-28 px-6 pb-8'>
               {allTinyUrls.map((item, index) => (
               <div key={index} className='w-full flex flex-col lg:flex-row items-center lg:justify-between lg:gap-x-20 my-2 bg-white p-4 lg:px-6 rounded-lg'>
                 {/*link provided by the user */}
@@ -158,6 +159,7 @@ function App() {
                 </div>
               </div>
               ))}
+            </div>
           </section>}
 
 {/*Advanced Statistics section */}
